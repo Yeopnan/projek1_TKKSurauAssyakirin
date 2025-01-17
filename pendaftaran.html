@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="YeopNan" />
+    <meta name="description" content="BorangPendaftaranTKK" />
+    <title>BorangPendaftaran</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      .header {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .header img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .header h1 {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+
+      .form {
+        width: 90%;
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-top: 20px;
+        color: #555;
+      }
+
+      label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="file"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="radio"] {
+        margin-right: 10px;
+      }
+
+      button,
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover,
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      button:focus,
+      input[type="submit"]:focus {
+        outline: none;
+        box-shadow: 0 0 3px 2px rgba(0, 123, 255, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <img
+          src="img/LogoSyakirin.svg"
+          alt="LogoSyakirin"
+          width="700px"
+          height="200px"
+        />
+      </header>
+      <div class="h1">
+        <h1>Borang Keahlian Khairat Kematian</h1>
+      </div>
+    </div>
+    <div class="form">
+      <form action="/action_page.php" method="post"></form>
+      <h2>KATEGORY PERMOHONAN:</h2>
+      <form>
+        <input type="radio" id="renew" name="category" value="renew" />
+        <label for="renew">Pembaharuan Keahlian (Renew)</label><br />
+        <input type="radio" id="new" name="category" value="new" />
+        <label for="new">Permohonan Keahlian Baru</label>
+      </form>
+
+      <h2>MAKLUMAT ZON</h2>
+      <form>
+        <input type="radio" id="tpusj1" name="zon" value="tpusj1" />
+        <label for="tpusj1">TPUSJ 1</label>
+        <input type="radio" id="tpusj2" name="zon" value="tpusj2" />
+        <label for="tpusj2">TPUSJ 2</label>
+        <input type="radio" id="tpusj3" name="zon" value="tpusj3" />
+        <label for="tpusj3">TPUSJ 3</label>
+        <input type="radio" id="tp7" name="zon" value="tp7" />
+        <label for="tp7">TP 7</label>
+      </form>
+      <form>
+        <label for="fname">Nama Penuh:</label><br />
+        <input type="text" id="fname" name="fname" value="fname" /><br />
+        <label for="ic">No Kad Pengenalan:</label><br />
+        <input type="number" id="number" name="number" value="number" /><br />
+        <label for="fname">Nama Pasangan:</label><br />
+        <input type="text" id="fname" name="fname" value="fname" /><br />
+        <label for="ic">No Kad Pengenalan Pasangan:</label><br />
+        <input type="number" id="number" name="number" value="number" /><br />
+        <label for="number">Jumlah Tanggungan Tinggal Bersama:</label><br />
+        <input type="number" id="number" name="number" value="number" /><br />
+        <label for="fname">Alamat Rumah:</label><br />
+        <input
+          type="text"
+          id="haddress"
+          name="haddress"
+          value="address"
+        /><br />
+        <label for="phone">No Telefon:</label><br />
+        <input type="number" id="number" name="number" value="number" /><br />
+      </form>
+      <h2>CARA BAYARAN</h2>
+      <form>
+        <input type="radio" id="bank-in" name="payment_method" value="bank-in" />
+        <label for="bank-in">Direct Bank-in</label><br />
+        <input type="radio" id="tunai" name="payment_method" value="tunai" />
+        <label for="tunai">Tunai</label>
+      </form>
+      <h2>RESIT BAYARAN</h2>
+      
+        <label for="file">Lampiran Resit:</label>
+        <input type="file" id="file" name="file" accept=".doc,.docx,.pdf" />
+        <br /><br />
+        
+      </form>
+      <h2>JUMLAH BAYARAN</h2>
+      <form>
+        <label for="number">(RM):</label><br />
+        <input type="number" id="number" name="number" value="number" /><br />
+      </form>
+      <input type="submit" name="submit" id="submit" />
+    </div>
+  </body>
+</html>
