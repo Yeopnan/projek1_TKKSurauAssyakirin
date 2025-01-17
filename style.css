@@ -5,81 +5,129 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: "Roboto", arial, sans-serif
   background-color: #f4f4f9;
   color: #333;
-  gap: 16px;
+  line-height:1.6;
 }
 .header {
-  width: 100%;
-  text-align: center;
-}
-.top-section {
+  background-color: #a2fdd3;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #a2fdd3;
-  padding: 10px 20px;
+  flex-wrap: wrap;  
 }
-.logo img {
-  max-width: 120px;
+.header.logo img{
+  max-width: 100px;
   height: auto;
 }
-.details {
+.details{
+  flex: 1;
   text-align: center;
   font-size: 14px;
-  line-height: 1.6;
 }
 .admin-btn {
-  background-color: #fff;
-  border: 1px solid #000;
+  background-color: #333;
+  color: #fff;
+  border: none;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 10px 15px;
   cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
 }
 .admin-btn:hover {
-  background-color: #ddd;
+  background-color: #555;
 }
 .banner {
+  text-align: center;
+  padding: 40px 20px;
   background-color: #f4f4f9;
-  padding: 20px;
 }
 .banner h1 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
-  color: #a8a8a8;
-  margin: 0;
+  color: #444;
+  margin-bottom: 10px;
 }
+
+
 .nav {
-  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 .nav a {
+  color: #007bff;
   text-decoration: none;
-  color: #3333ff;
   font-size: 14px;
-  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 .nav a:hover {
+  color: #0056b3;
   text-decoration: underline;
 }
-div {
-  margin: 20px;
-  display: flex;
-  align-items: center;
+.content-section{
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 800px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
-h1 {
-  background-color: #ffffff;
-  color: #cccccc;
+.content-section h2{
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
 }
-div.nav-bar {
-  display: flex;
-  flex-direction: row;
-  font-size: medium;
+.content-section p, 
+.content-section ol{
+  margin-bottom: 10px;
+  font-size: 14px;
 }
-nav a {
-  padding: 0;
-  margin: 10px;
+
+.download-btn{
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
   text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
+.download-btn:hover{
+  background-color: #0056b3;
+}
+@media (max-width:768px){
+  .header{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.admin-btn{
+  margin-top: 10px;
+}
+.nav{
+  flex-wrap: wrap;
+}
+.content-section{
+  margin: 10px;
+  padding: 15px;
+}
+.banner h1{
+  font-size: 20px;
+}
+
+.footer{
+  font-size: 20px;
+}
+
