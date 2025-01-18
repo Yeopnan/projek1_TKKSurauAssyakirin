@@ -15,7 +15,7 @@
     />
     <style>
       body {
-        background-color: #f8f9fa;
+        background-color: #b9dbfd;
         font-family: Arial, sans-serif;
       }
 
@@ -25,19 +25,34 @@
       }
 
       .form-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
         max-width: 800px;
         margin: 40px auto;
         margin-bottom: 30px;
         padding: 20px;
-        background: #fff;
+        background: #ffffff;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="file"] {
+        width: 100%;
+        padding: 8px;
+        
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
         
       }
 
       .form-header {
         margin-bottom: 20px;
         text-align: center;
+        
       }
     </style>
   </head>
@@ -193,10 +208,17 @@
         <input type="number" id="number" name="number" value="number" />
             </div>
           </div>
-
+          <!-- bayaran -->
+          <div class="mb-4">
+            <h2 class="h5">Yuran</h2>
+            <ol>
+                <li>Yuran Pendaftaran sebanyak <strong>RM10</strong> untuk setiap pendaftaran baru sahaja.</li>
+                <li>Yuran Tahunan sebanyak <strong>RM50</strong> untuk penyertaan baru atau pembaharuan.</li>
+            </ol>
           <!-- Payment Method -->
           <div class="mb-4">
             <h2 class="h5">Cara Bayaran</h2>
+            
             <div class="form-check">
               <input
                 class="form-check-input"

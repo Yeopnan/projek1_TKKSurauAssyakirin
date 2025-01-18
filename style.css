@@ -5,10 +5,7 @@
 }
 
 body {
-  font-family: "Roboto", arial, sans-serif
-  background-color: #f4f4f9;
-  color: #333;
-  line-height:1.6;
+  font-family: "Roboto", arial, sans-serif;
 }
 .header {
   background-color: #a2fdd3;
@@ -16,13 +13,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
-.header.logo img{
+.header.logo img {
   max-width: 100px;
   height: auto;
 }
-.details{
+.details {
   flex: 1;
   text-align: center;
   font-size: 14px;
@@ -52,7 +49,6 @@ body {
   margin-bottom: 10px;
 }
 
-
 .nav {
   display: flex;
   justify-content: center;
@@ -73,7 +69,7 @@ body {
   color: #0056b3;
   text-decoration: underline;
 }
-.content-section{
+.content-section {
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
@@ -81,18 +77,18 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
-.content-section h2{
+.content-section h2 {
   font-size: 20px;
   margin-bottom: 15px;
   color: #333;
 }
-.content-section p, 
-.content-section ol{
+.content-section p,
+.content-section ol {
   margin-bottom: 10px;
   font-size: 14px;
 }
 
-.download-btn{
+.download-btn {
   display: inline-block;
   background-color: #007bff;
   color: #fff;
@@ -104,30 +100,35 @@ body {
   margin-top: 10px;
   transition: background-color 0.3s ease;
 }
-.download-btn:hover{
+.download-btn:hover {
   background-color: #0056b3;
 }
-@media (max-width:768px){
-  .header{
+@media (max-width: 768px) {
+  .header {
     flex-direction: column;
     text-align: center;
   }
 }
-.admin-btn{
+.admin-btn {
   margin-top: 10px;
 }
-.nav{
+.nav {
   flex-wrap: wrap;
 }
-.content-section{
+.content-section {
   margin: 10px;
   padding: 15px;
 }
-.banner h1{
+.banner h1 {
   font-size: 20px;
 }
 
-.footer{
-  font-size: 20px;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 204, 255);
+  color: white;
+  text-align: center;
 }
-
