@@ -103,12 +103,12 @@ body {
 .download-btn:hover {
   background-color: #0056b3;
 }
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    text-align: center;
+@media screen and (min-width: 480px) {
+  body {
+    background-color: aqua;
   }
 }
+
 .admin-btn {
   margin-top: 10px;
 }
