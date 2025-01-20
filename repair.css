@@ -1,0 +1,102 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container for Layout */
+.container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  height: 100px; /* Adjust logo height */
+  margin-right: 20px;
+}
+
+.content {
+  flex: 1;
+}
+
+.account {
+  text-align: right;
+}
+
+.container-1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.container-1 h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Navbar on the Left */
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  position: fixed;
+  top: 160px; /* Adjust to avoid overlapping header */
+  left: 0;
+  height: calc(100% - 160px); /* Full height minus header */
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.container-2 a {
+  margin: 10px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.container-2 a:hover {
+  color: #007bff;
+}
+
+/* Main Content Area */
+.content-section {
+  margin-left: 220px; /* Matches navbar width */
+  padding: 20px;
+  max-width: 800px;
+}
+
+.content-section h2 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.content-section p,
+.content-section ol {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
