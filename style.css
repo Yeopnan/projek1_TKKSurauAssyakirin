@@ -18,7 +18,8 @@ a:hover {
 /* Container for Layout */
 .header {
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 20px;
   align-items: center;
   text-align: left;
@@ -83,6 +84,8 @@ a:hover {
   ul.container-2 li {
     float: none;
   }
+}
+@media screen and(max-width:500px) {
   .header {
     float: none;
     display: block;
