@@ -83,6 +83,11 @@ a:hover {
   ul.container-2 li {
     float: none;
   }
+  .header {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 /* Main Content Area */
 .content-section {
