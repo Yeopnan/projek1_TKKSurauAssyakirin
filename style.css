@@ -79,6 +79,20 @@ a:hover {
 .container-2 li a:hover {
   background-color: #007bff;
 }
+.button{
+  background-color: #0476aa; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+}
 @media screen and(max-width: 600px) {
   ul.container-2 li.right,
   ul.container-2 li {
