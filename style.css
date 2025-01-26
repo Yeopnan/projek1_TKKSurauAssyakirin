@@ -79,7 +79,7 @@ a:hover {
 .container-2 li a:hover {
   background-color: #007bff;
 }
-.button{
+.button {
   background-color: #0476aa; /* Green */
   border: none;
   color: white;
@@ -92,7 +92,7 @@ a:hover {
   cursor: pointer;
   border-radius: 12px;
 }
-}
+
 @media screen and(max-width: 600px) {
   ul.container-2 li.right,
   ul.container-2 li {
