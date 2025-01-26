@@ -6,12 +6,12 @@ html {
   box-sizing: border-box;
 }
 
-a {
+.a {
   text-decoration: none;
   color: #007bff;
 }
 
-a:hover {
+.a:hover {
   text-decoration: underline;
 }
 
