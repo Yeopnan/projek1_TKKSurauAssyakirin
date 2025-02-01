@@ -98,6 +98,11 @@ html {
   ul.container-2 li.right,
   ul.container-2 li {
     float: none;
+    width: 100%;
+  }
+  body {
+    width: 100%;
+    background-color: rgb(135, 219, 222);
   }
 }
 @media screen and(max-width:500px) {
