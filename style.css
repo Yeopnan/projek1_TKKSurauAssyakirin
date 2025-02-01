@@ -94,7 +94,7 @@ html {
   border-radius: 12px;
 }
 
-@media screen and(max-width: 600px) {
+@media screen and(max-width: 768px) {
   ul.container-2 li.right,
   ul.container-2 li {
     float: none;
