@@ -21,21 +21,19 @@ html {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
-  text-align: center;
+  text-align: left;
   padding: 20px;
   background-color: white;
   overflow: hidden;
 }
 
 .logo img {
-  .logo img {
-    height: 200px; /* Adjust logo height */
-    margin: 20px;
-    padding: 20px;
-    float: left;
-  }
+  height: 200px; /* Adjust logo height */
+  margin: 20px;
+  padding: 20px;
+  float: left;
 }
 
 .details {
@@ -55,9 +53,8 @@ html {
   padding: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-  .details,
-  .account {
+@media only screen and (min-width: 768px) {
+  body {
     flex-direction: column;
     text-align: center;
   }
