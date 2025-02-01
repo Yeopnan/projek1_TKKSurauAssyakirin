@@ -64,24 +64,22 @@ input[type="file"] {
   margin-bottom: 20px;
   text-align: center;
 }
-btn btn-primary {
-  background-color: #0476aa;
+
+.button {
+  background-color: #c2f1e0; /* Green */
   border: none;
-  color: rgb(176, 209, 228);
-  padding: 10px;
+  color: white;
+  padding: 10px 24px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 2px 2px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 10px;
 }
-.a {
-  text-decoration: none;
-  color: #4c00ff;
-}
-
-.a:hover {
-  text-decoration: underline;
+.button:hover {
+  background-color: #846bf0;
+  color: rgb(255, 255, 255);
 }
