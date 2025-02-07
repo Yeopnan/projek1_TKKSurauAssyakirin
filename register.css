@@ -66,9 +66,9 @@ input[type="file"] {
 }
 
 .button {
-  background-color: #c2f1e0; /* Green */
+  background-color: #c2f1d4; /* Green */
   border: none;
-  color: white;
+  color: rgb(43, 6, 6);
   padding: 10px 24px;
   text-align: center;
   text-decoration: none;
@@ -81,7 +81,7 @@ input[type="file"] {
 }
 .button:hover {
   background-color: #846bf0;
-  color: rgb(255, 255, 255);
+  color: rgb(224, 43, 43);
 }
 .footer {
   text-align: center;
@@ -95,4 +95,7 @@ input[type="file"] {
 }
 .mt-3 {
   align-items: center;
+}
+.hidden {
+  display: none;
 }

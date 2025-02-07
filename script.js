@@ -6,18 +6,37 @@ button.addEventListener("click", function () {
 });
 
 // Select elements
-const renewRadio = document.getElementById("renew");
-const extraFields = document.getElementById("extra_fields");
+document.addEventListener("DOMContentLoaded", function () {
+  const renewRadio = document.getElementById("renew");
+  const allFields = document.querySelector(".form-container"); // The entire form
+  const minimalFields = document.getElementById("minimal_fields"); // Only necessary fields
 
-// Add event listener to radio buttons
-document.querySelectorAll('input[name="kategori"]').forEach((radio) => {
-  radio.addEventListener("change", function () {
-    if (renewRadio.checked) {
-      // Hide extra fields
-      extraFields.classList.add("hidden");
-    } else {
-      // Show extra fields
-      extraFields.classList.remove("hidden");
-    }
+  // Ensure calendar and "Kategori Permohonan" always show
+  const dateSection = document
+    .querySelector('input[type="date"]')
+    .closest("fieldset");
+  const kategoriSection = document
+    .querySelector('input[name="kategori"]')
+    .closest("fieldset");
+
+  // Add event listeners to radio buttons
+  document.querySelectorAll('input[name="kategori"]').forEach((radio) => {
+    radio.addEventListener("change", function () {
+      if (renewRadio.checked) {
+        allFields.style.display = "none"; // Hide the full form
+        minimalFields.style.display = "block"; // Show minimal fields
+      } else {
+        allFields.style.display = "block"; // Show full form
+        minimalFields.style.display = "none"; // Hide minimal fields
+      }
+
+      // Always show calendar and "Kategori Permohonan"
+      dateSection.style.display = "block";
+      kategoriSection.style.display = "block";
+    });
   });
+
+  // Always show calendar and "Kategori Permohonan" on page load
+  dateSection.style.display = "block";
+  kategoriSection.style.display = "block";
 });
