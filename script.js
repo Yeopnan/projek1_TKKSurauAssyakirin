@@ -8,35 +8,33 @@ button.addEventListener("click", function () {
 // Select elements
 document.addEventListener("DOMContentLoaded", function () {
   const renewRadio = document.getElementById("renew");
-  const allFields = document.querySelector(".form-container"); // The entire form
-  const minimalFields = document.getElementById("minimal_fields"); // Only necessary fields
+  const baruRadio = document.getElementById("baru");
+  const kemaskiniRadio = document.getElementById("kemaskini");
 
-  // Ensure calendar and "Kategori Permohonan" always show
-  const dateSection = document
-    .querySelector('input[type="date"]')
-    .closest("fieldset");
-  const kategoriSection = document
-    .querySelector('input[name="kategori"]')
-    .closest("fieldset");
+  const minimalFields = document.getElementById("minimal_fields");
+  const fullForm = document.getElementById("full_form");
 
-  // Add event listeners to radio buttons
+  // Event listener for category selection
   document.querySelectorAll('input[name="kategori"]').forEach((radio) => {
     radio.addEventListener("change", function () {
       if (renewRadio.checked) {
-        allFields.style.display = "none"; // Hide the full form
-        minimalFields.style.display = "block"; // Show minimal fields
+        // Show minimal fields, hide full form
+        minimalFields.style.display = "block";
+        fullForm.style.display = "none";
       } else {
-        allFields.style.display = "block"; // Show full form
-        minimalFields.style.display = "none"; // Hide minimal fields
+        // Show full form, hide minimal fields
+        minimalFields.style.display = "none";
+        fullForm.style.display = "block";
       }
-
-      // Always show calendar and "Kategori Permohonan"
-      dateSection.style.display = "block";
-      kategoriSection.style.display = "block";
     });
   });
 
-  // Always show calendar and "Kategori Permohonan" on page load
-  dateSection.style.display = "block";
-  kategoriSection.style.display = "block";
+  // Set initial state based on the selected radio button (if any)
+  if (renewRadio.checked) {
+    minimalFields.style.display = "block";
+    fullForm.style.display = "none";
+  } else {
+    minimalFields.style.display = "none";
+    fullForm.style.display = "block";
+  }
 });
