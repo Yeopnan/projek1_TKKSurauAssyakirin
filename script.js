@@ -21,6 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Show minimal fields, hide full form
         minimalFields.style.display = "block";
         fullForm.style.display = "none";
+      }
+      if (kemaskiniRadio.checked) {
+        // Show minimal fields, hide full form
+        minimalFields.style.display = "block";
+        fullForm.style.display = "none";
       } else {
         // Show full form, hide minimal fields
         minimalFields.style.display = "none";
