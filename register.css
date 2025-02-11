@@ -43,7 +43,7 @@ body {
   margin: 40px 20px 40px 20px;
   margin-bottom: 30px;
   padding: 40px;
-  background: #ffffff;
+  background: #fcfafa;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   align-items: center;
@@ -99,4 +99,20 @@ input[type="file"] {
 }
 .hidden {
   display: none;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
