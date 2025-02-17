@@ -13,25 +13,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const minimalFields = document.getElementById("minimal_fields");
   const fullForm = document.getElementById("full_form");
-  const kemasKini = document.getElementById("kemaskini");
+  
 
   // Event listener for category selection
-  document.querySelectorAll('input[name="kategori"]').forEach((radio) => {
+  document.querySelectorAll('input[name="kategori"]').forEach((radio) =>
+  {
     radio.addEventListener("change"), function () {
       if (renewRadio.checked) {
         // Show minimal fields, hide full form
         minimalFields.style.display = "block";
         fullForm.style.display = "none";
       }
-      if (kemaskiniRadio.checked) {
+      else if (kemaskiniRadio.checked) {
         // Show minimal fields, hide full form
         kemasKini.style.display = "block";
         fullForm.style.display = "none";
-      }
-      
-     
-    } 
-      else {
+      } else {
         // Show full form, hide minimal fields
         minimalFields.style.display = "none";
         fullForm.style.display = "block";
@@ -40,11 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Set initial state based on the selected radio button (if any)
-  if (renewRadio.checked) {
+  if (renewRadio.checked || kemaskiniRadio.checked) {
     minimalFields.style.display = "block";
     fullForm.style.display = "none";
   } else {
     minimalFields.style.display = "none";
     fullForm.style.display = "block";
-}
+  };
+
 
